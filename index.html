@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AI Video Surveillance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h3 class="btn btn-primary heading">AI Video Surveillance
+        <span id="span_1"> |Input name which you will should mach the names present in CoCo model then only it will detect</span>
+    </h3>
+    <br><br>
+    <div id="div_1">
+    <label>Object Name:</label>
+    <br><br>
+    <input type="text" placeholder="Type the object name" id="Input">
+    <br><br>
+    <button class="btn btn-primary"  onclick="start()" id="Start_button">Start</button>
+    <br><br>
+    <button class="btn btn-warning  warning-button" id="found"></button>
+    <button class="btn btn-danger  danger-button" id="Status"></button>
+</div>
+</body>
+<script href="main.js"></script>
+</html>
